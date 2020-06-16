@@ -1,0 +1,24 @@
+Q:
+Starting a Gradle Daemon (subsequent builds will be faster)
+<-------------> 0% CONFIGURING [1s]                                                                                     <-------------> 0% CONFIGURING [26s]目：Spring Boot博客企业开发\SpringBootBlog\hello-world\build.gradle into local compi> Task :compileJava FAILED
+
+During the build, one or more dependencies that were declared without a version failed to resolve:
+    org.springframework.boot:spring-boot-starter-web:客企业开发\SpringBootBlog\hello-world\build.gradle into local compi
+
+Did you forget to apply the io.spring.dependency-management plugin to the hello-world project?
+
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Could not resolve all files for configuration ':compileClasspath'.
+   > Could not find org.springframework.boot:spring-boot-starter-web:.
+     Required by:
+         project :
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+A: 在build.gradle 文件中，添加个“.dependency-management”插件。教程：http://www.mamicode.com/info-detail-2604932.html
