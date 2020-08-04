@@ -26,3 +26,15 @@ IoC Container  -IoC容器，是实现依赖注入的关键，本质上是一个�
 开发业务主键：Service
 处理请求主键：Controller
 数据库访问主键：Repository
+
+
+@Primary  //优先调用，依赖的接口，实现类变化，可以去更改调用类的优先级
+也可以通过@Repository("alphaHibernate")  给类命名
+
+@Service  //初始化是在实例化之后  
+都只初始化一次
+@Scope默认单例，每次只有初始化一次
+@Scope("prototype") 这样每次getbean都实例化一次
+
+
+#开发过程：Controller去处理浏览器请求，调用业务主键service去处理当前业务，业务主键调用Dao去数据库。controller-service-Dao彼此互相依赖，可以用依赖注入。
