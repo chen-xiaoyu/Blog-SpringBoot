@@ -1,0 +1,30 @@
+1.选择重写或实现方法（select methods to override/implements）
+Ctrl+O
+2.选择实现方法（select methods to implement）
+Ctrl+I
+3.生成构造方法、toString方法、重写或实现方法及版权（generate...）
+Alt+Insert
+4.包围（surround with）
+Ctrl+Alt+T  
+输入图片说明
+if else语句、while语句、do while语句、for语句、try catch语句、try finally语句、try catch finally语句、 synchronized关键字或synchronized 语句块、放到Runnable的run方法中等等
+
+5.自动补全（完成，Completion）
+Ctrl+Space 基本的自动补全，通过设置可以设置成和eclipse一样（Alt+/）  
+Ctrl+Shift+Space 智能的自动补全
+6.折叠（folding）
+Ctrl+Shift+数字键盘的-（collapse 折叠，按一次折叠全部）  
+Ctrl+Shift+数字键盘的+（expand展开，按一次展开一个，再按一次展开下一个）
+7.注释（comment）
+Ctrl+/ 注释行（选中的单行或多行 ，在每行的开始加上//）  
+Ctrl+Shift+/ 注释代码块 （ /**/）
+8.重新格式化代码（reformat code）
+Ctrl+Alt+L
+9.优化类导入（Optimize Imports）
+Ctrl+Alt+O
+10.main方法、System.out.println()等方法的自动完成
+Ctrl+j  
+输入psvm然后按Ctrl+J，就可以自动补全main方法  
+输入sout然后按Ctrl+J，就可以自动补全System.out.println()方法
+11.类移动到其他包
+F6
