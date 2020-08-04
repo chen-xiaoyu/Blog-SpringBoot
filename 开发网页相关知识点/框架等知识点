@@ -1,0 +1,28 @@
+#Spring Boot核心内容
+-起步依赖（一段话包含了很多依赖包，方便）、自动配置（不用配置，就可以把服务器配置起来）、端点监控
+
+检查网页的功能：http://localhost:8080
+//是spring mvc的注解
+@Controller
+@RequestMapping 
+
+#Spring Framework
+Spring Core  
+   -Ioc、AOP
+Spring Data Access
+   -Transations、 Spring MyBatis
+Web Servlet
+   -Spring MVC
+Integration
+   -Email、Scheduling、AMQP、Security
+
+#Spring入门
+Spring IoC
+Inversiton of Control -控制反装，是一种面向对象编程的设计思想
+Dependency Injection  -依赖注入，是IoC思想的实现方式
+IoC Container  -IoC容器，是实现依赖注入的关键，本质上是一个工厂
+
+通用：Component
+开发业务主键：Service
+处理请求主键：Controller
+数据库访问主键：Repository
