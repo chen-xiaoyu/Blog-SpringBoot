@@ -1,2 +1,5 @@
 Identify and stop the process that's listening on port 8080 or configure this application to listen
 https://blog.csdn.net/weixin_44519467/article/details/104072103
+
+
+cmd 输入netstat -ano  找到对应端口pid，输入 taskkill /pid 6052 -f 
