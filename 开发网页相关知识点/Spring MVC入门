@@ -1,0 +1,18 @@
+#Spring MVC
+服务端三层架构： 表现层、业务层、数据访问层
+MVC:Model 模型层（V和C联系的纽带）、View视图层（负责渲染和展现）、Controller控制层（处理浏览器请求，负责调度）
+核心组件：前端控制器：DispatcherServlet(调度C和V层)
+
+Thymeleaf 
+模板引擎：生成动态的HTML(需要模板文件和Model才能生成模板引擎)
+Thymeleaf：倡导自然模板，即以HTML文件为模板。
+常用语法：标准表达式、判断与循环、模板的布局
+
+GET获取参数的两种方式
+1.？+参数，如：？current=1&limit=20
+2.参数拼接到路径当中：path="student/(id)"
+传输特点：浏览器中传输，传输数据有限
+
+POST向浏览器提交数据
+
+
