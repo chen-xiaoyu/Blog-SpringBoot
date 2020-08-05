@@ -13,6 +13,14 @@ GET获取参数的两种方式
 2.参数拼接到路径当中：path="student/(id)"
 传输特点：浏览器中传输，传输数据有限
 
+
+1.禁用掉thymeleaf的缓存功能
+#禁用模板引擎的缓存
+spring.thymeleaf.cache=false
+2.在idea中修改 html代码 时记得按 ctrl +f9刷新一下
+
 POST向浏览器提交数据
+
+JSON字符串起到一个衔接的作用（如，返回局部验证的结果是否成功，可以用这个）
 
 
