@@ -1,0 +1,24 @@
+MyBatis
+
+1. 安装server和workbench
+其中server中，进行初始化配置，添加my.ini，并将其bin路径添加到环境变量中。并在该路径下cmd进行mysqld --initialize --console （得到临时密码：ggg+ia8/a5xF）；进行
+mysqld install
+修改密码：alter user root@localhost identified by 'dncy821.';
+创建数据库： create database community;
+显示数据库：show databases;
+使用数据库：use community;
+导入sql文件：source E:/Data/IDEA/community-init-sql-1.5/init_schema.sql;  (路径应该右斜线)
+查看表格：show tables;
+查看表格中文件: select * from user;
+
+
+• 核心组件
+- SqlSessionFactory：用于创建SqlSession的工厂类。
+- SqlSession：MyBatis的核心组件，用于向数据库执行SQL。
+- 主配置文件：XML配置文件，可以对MyBatis的底层行为做出详细的配置。
+- Mapper接口：就是DAO接口，在MyBatis中习惯性的称之为Mapper。
+- Mapper映射器：用于编写SQL，并将SQL和实体类映射的组件，采用XML、注解均可实现。
+• 示例
+- 使用MyBatis对用户表进行CRUD操作。
+
+连接池也叫数据源，是能统一管理文件的一个工厂，能够反复的初始化一个连接让反复使用；管理连接的上限，避免数据由于过多的访问而瘫痪
